@@ -18,7 +18,9 @@ from django.contrib import admin
 from django.urls import path
 from monitor.views import dashboard, logout_view
 
-from monitor.views import dashboard
+admin.site.site_header = "Progetto PPM"
+admin.site.site_title = "Progetto PPM"
+admin.site.index_title = "Benvenuto nel pannello di controllo"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
